@@ -1,6 +1,6 @@
 ---
 title: trabalhosescolarespremium
-emoji: 🐳
+emoji: ✔
 colorFrom: yellow
 colorTo: blue
 sdk: static
