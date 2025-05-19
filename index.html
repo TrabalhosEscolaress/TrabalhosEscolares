@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhos Escolares Premium | Entrega Rápida e Qualidade Garantida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4F46E5 0%, #10B981 100%);
+        }
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-graduation-cap text-3xl text-primary mr-2"></i>
+                <h1 class="text-2xl font-bold text-dark">TrabalhosEscolares<span class="text-primary">Premium</span></h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-600 hover:text-primary font-medium">Serviços</a>
+                <a href="#pricing" class="text-gray-600 hover:text-primary font-medium">Preços</a>
+                <a href="#about" class="text-gray-600 hover:text-primary font-medium">Sobre</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary font-medium">Contato</a>
+            </nav>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Trabalhos escolares de alta qualidade</h2>
+                <p class="text-xl mb-8 opacity-90">Economize tempo e garanta boas notas com nossos trabalhos personalizados. Entrega rápida e sigilo total.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-white text-primary font-bold py-3 px-6 rounded-lg text-center hover:bg-gray-100 transition duration-300">Encomendar Agora</a>
+                    <a href="#pricing" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-white hover:bg-opacity-10 transition duration-300">Ver Preços</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://illustrations.popsy.co/amber/student.svg" alt="Estudante" class="w-3/4 floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">Por que escolher nossos serviços?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos a melhor combinação de qualidade, preço e rapidez para seus trabalhos escolares.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl text-center">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-dark">Entrega Rápida</h3>
+                    <p class="text-gray-600">Entregamos seu trabalho no prazo combinado, muitas vezes antes do esperado.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center">
+                    <div class="bg-secondary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lock text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-dark">Sigilo Total</h3>
+                    <p class="text-gray-600">Seu trabalho é confidencial. Ninguém saberá que você usou nossos serviços.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-dark">Qualidade Garantida</h3>
+                    <p class="text-gray-600">Revisamos cada trabalho para garantir a melhor qualidade possível.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">Nossos Serviços</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos uma variedade de serviços para atender todas suas necessidades escolares.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-book text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">Trabalhos de Humanas</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">História, Geografia, Filosofia, Sociologia, Português e outras matérias de humanas.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Pesquisa aprofundada</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Redação clara e objetiva</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Referências confiáveis</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-calculator text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">Trabalhos de Exatas</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Matemática, Física, Química e outras matérias de exatas com cálculos precisos.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Cálculos detalhados</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Gráficos e tabelas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Explicações passo a passo</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-plus-circle text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">Serviços Extras</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Adicione esses serviços extras para deixar seu trabalho ainda melhor.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Apresentação no Canva</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Formatação ABNT</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Revisão ortográfica</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">Tabela de Preços</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Preços acessíveis para trabalhos de alta qualidade.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="price-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-semibold text-dark mb-2">Humanas</h3>
+                        <p class="text-gray-600 mb-4">História, Geografia, Filosofia, Sociologia, Português</p>
+                        <div class="text-4xl font-bold text-primary">R$ 10-15</div>
+                        <p class="text-gray-500 text-sm mt-2">por trabalho</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Pesquisa completa</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Redação profissional</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Referências bibliográficas</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-primary text-white py-3 px-6 rounded-lg font-medium hover:bg-opacity-90 transition duration-300">Encomendar</a>
+                </div>
+                <div class="price-card bg-gray-50 p-8 rounded-xl border-2 border-primary shadow-md relative transition duration-300">
+                    <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">MAIS POPULAR</div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-semibold text-dark mb-2">Exatas</h3>
+                        <p class="text-gray-600 mb-4">Matemática, Física, Química</p>
+                        <div class="text-4xl font-bold text-primary">R$ 15-20</div>
+                        <p class="text-gray-500 text-sm mt-2">por trabalho</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Cálculos detalhados</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Gráficos e tabelas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Explicações passo a passo</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-primary text-white py-3 px-6 rounded-lg font-medium hover:bg-opacity-90 transition duration-300">Encomendar</a>
+                </div>
+                <div class="price-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-semibold text-dark mb-2">Extras</h3>
+                        <p class="text-gray-600 mb-4">Serviços adicionais</p>
+                        <div class="text-4xl font-bold text-primary">+ R$ 5-10</div>
+                        <p class="text-gray-500 text-sm mt-2">por serviço</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Apresentação no Canva: +R$10</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Formatação ABNT: +R$5</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Revisão ortográfica: +R$5</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-primary text-white py-3 px-6 rounded-lg font-medium hover:bg-opacity-90 transition duration-300">Encomendar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-dark mb-6">Sobre Nós</h2>
+                    <p class="text-gray-600 mb-4">Somos uma equipe de profissionais dedicados a ajudar estudantes a alcançarem seus objetivos acadêmicos sem estresse desnecessário.</p>
+                    <p class="text-gray-600 mb-4">Com anos de experiência em diversas áreas do conhecimento, garantimos trabalhos bem pesquisados, redigidos com clareza e dentro dos prazos combinados.</p>
+                    <p class="text-gray-600 mb-6">Nosso compromisso é com a qualidade, sigilo absoluto e satisfação total do cliente.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                            <div class="text-2xl font-bold text-primary mb-1">+500</div>
+                            <div class="text-gray-600 text-sm">Trabalhos entregues</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                            <div class="text-2xl font-bold text-primary mb-1">100%</div>
+                            <div class="text-gray-600 text-sm">Sigilo garantido</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                            <div class="text-2xl font-bold text-primary mb-1">24h</div>
+                            <div class="text-gray-600 text-sm">Entrega rápida</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://illustrations.popsy.co/amber/academic-boy.svg" alt="Estudante" class="w-full max-w-md mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">O que nossos clientes dizem</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Depoimentos reais de estudantes que já usaram nossos serviços.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold mr-4">A</div>
+                        <div>
+                            <h4 class="font-semibold text-dark">Ana Clara</h4>
+                            <p class="text-gray-500 text-sm">Estudante de História</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Meu trabalho de História foi perfeito! Entregaram antes do prazo e recebi elogios do professor. Super recomendo!"</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">L</div>
+                        <div>
+                            <h4 class="font-semibold text-dark">Lucas</h4>
+                            <p class="text-gray-500 text-sm">Estudante de Engenharia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Os cálculos do trabalho de Física estavam impecáveis. Nunca tinha tirado nota tão alta! E o preço foi justo pelo serviço."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold mr-4">M</div>
+                        <div>
+                            <h4 class="font-semibold text-dark">Mariana</h4>
+                            <p class="text-gray-500 text-sm">Estudante de Letras</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Adorei a apresentação no Canva que fizeram para meu trabalho de Português. Ficou profissional e criativa. Valeu cada centavo!"</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">Perguntas Frequentes</h2>
+                <p class="text-gray-600">Tire suas dúvidas sobre nossos serviços.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(1)">
+                        <h3 class="font-semibold text-dark">Como faço para encomendar um trabalho?</h3>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300" id="faq-icon-1"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="faq-content-1">
+                        <p>É simples! Basta entrar em contato conosco pelo WhatsApp ou e-mail informando os detalhes do trabalho que você precisa: matéria, tema, número de páginas, prazo de entrega e quaisquer outras especificações. Nós responderemos com um orçamento e prazo exatos.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(2)">
+                        <h3 class="font-semibold text-dark">Como é garantido o sigilo?</h3>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300" id="faq-icon-2"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="faq-content-2">
+                        <p>Não armazenamos nenhuma informação pessoal que possa identificar você após a entrega do trabalho. Todo o processo é feito de forma anônima e os arquivos são apagados de nossos sistemas após a confirmação de recebimento. Nunca compartilhamos informações com terceiros.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(3)">
+                        <h3 class="font-semibold text-dark">Qual a forma de pagamento?</h3>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300" id="faq-icon-3"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="faq-content-3">
+                        <p>Aceitamos APENAS PIX. O pagamento é feito 50% no momento da encomenda e 50% após a aprovação do trabalho. Em casos de valores menores (até R$30), pode ser necessário o pagamento integral antecipado.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(4)">
+                        <h3 class="font-semibold text-dark">E se eu não gostar do trabalho?</h3>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300" id="faq-icon-4"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="faq-content-4">
+                        <p>Oferecemos até 2 revisões gratuitas para ajustes no trabalho entregue. Nosso objetivo é sua total satisfação. Caso mesmo após as revisões você não esteja satisfeito, analisaremos a situação caso a caso para encontrar a melhor solução.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">Entre em Contato</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Envie sua solicitação ou tire suas dúvidas. Respondemos rapidamente!</p>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Seu Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Digite seu nome">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Seu E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Digite seu e-mail">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Assunto</label>
+                            <select id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Selecione um assunto</option>
+                                <option value="humanas">Trabalho de Humanas</option>
+                                <option value="exatas">Trabalho de Exatas</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Descreva seu trabalho com detalhes: matéria, tema, número de páginas, prazo, etc."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-medium hover:bg-opacity-90 transition duration-300">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl h-full">
+                        <h3 class="text-xl font-semibold text-dark mb-6">Outras formas de contato</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-phone-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-dark mb-1">WhatsApp</h4>
+                                    <p class="text-gray-600">(61) 99987-5666</p>
+                                    <a href="https://wa.me/5511987654321" class="text-primary text-sm font-medium mt-1 inline-block hover:underline">Enviar mensagem</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-dark mb-1">E-mail</h4>
+                                    <p class="text-gray-600">trabalhosssescolaresss@gmail.com</p>
+                                    <a href="mailto:contato@trabalhospremium.com" class="text-primary text-sm font-medium mt-1 inline-block hover:underline">Enviar e-mail</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-clock text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-dark mb-1">Horário de Atendimento</h4>
+                                    <p class="text-gray-600">Segunda a Sexta: 13h às 00h</p>
+                                    <p class="text-gray-600">Sábado e Domingo: 9h às 00h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-primary mr-2"></i>
+                        <h3 class="text-xl font-bold">TrabalhosEscolares<span class="text-primary">Premium</span></h3>
+                    </div>
+                    <p class="text-gray-400">Ajudando estudantes a alcançarem seu potencial acadêmico desde 2018.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-whatsapp text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Trabalhos de Humanas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Trabalhos de Exatas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Apresentações no Canva</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Formatação ABNT</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition duration-300">Tabela de Preços</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">Sobre Nós</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition duration-300">Perguntas Frequentes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Receba promoções e dicas acadêmicas no seu e-mail.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-lg text-dark w-full focus:outline-none">
+                        <button type="submit" class="bg-primary px-4 py-2 rounded-r-lg hover:bg-opacity-90 transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 TrabalhosEscolaresPremium. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511987654321" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // FAQ Toggle Function
+        function toggleFAQ(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('transform');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission (example)
+        const form = document.querySelector('form');
+        if(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                form.reset();
+            });
+        }
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=TrabalhosEscolares/trabalhosescolarespremium" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
